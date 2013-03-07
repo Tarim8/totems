@@ -1,0 +1,17 @@
+#!/bin/bash
+
+Serial="/dev/ttyACM0"
+Port=50000
+Baud=9600
+
+stty -F "${Serial}" ${Baud} raw -onlcr -iexten -echo -echoe -echok -echoctl -echoke
+# raw: -ignbrk  -brkint -ignpar -parmrk -inpck -istrip -inlcr
+#      -igncr -icrnl  -ixon  -ixoff   -iuclc   -ixany  -imaxbel  -opost
+#      -isig -icanon -xcase min 1 time 0
+
+[ "X$1" = "X--set" ] && exit 0
+
+while true; do
+    echo listening >&2
+    nc -vvlk "${Port}" > "${Serial}" < "${Serial}"
+done

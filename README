@@ -1,0 +1,33 @@
+Description:
+    Totems is a remote control system for controlling Arduino based objects in a theatre environment.
+
+    Initially designed to create a heartbeat and "icy chill" in dolls carried or worn by the audience for Raucous Collective's Stick House.
+
+
+Copyright/License:
+    Copyright Tarim 2013
+
+    Totems is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    Totems is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with Totems.  If not, see <http://www.gnu.org/licenses/>.
+
+
+Future hopes:
+    Add multiple transmitters
+    Add individual totem selection
+    Generally cleam up the code
+
+Parts list:
+    Totem - Arduino code - Tarim
+    Streaming - Mikal Hart's Arduino Streaming library
+    VirtualWire - Mike McCauley's RF transmission protocol
+    proxy - Link port to USB serial device on Arduino transmitter

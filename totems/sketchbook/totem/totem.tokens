@@ -1,0 +1,26 @@
+// arduino commands
+
+@ignoreupto &
+@separator \n?&
+
+// Headers
+@lengthsuffix len
+CEMPTY
+CCONTENTLENGTH	Content-Length: 99
+CGET	GET /?
+
+// Query string variables
+//@lengthsuffix
+CACTIVATE	activate=1&
+CGROUP	group=255&
+CRED	red=255&
+CBLUE	blue=255&
+CGREEN	green=255&
+
+CTONE	tone=255&
+CVIBE	vibrate=255&
+CPULSE	pulse=255&
+CTEMP	temp=255&
+
+CSLOW	slow=255&
+CFAST	fast=255&
